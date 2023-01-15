@@ -1,8 +1,9 @@
 const projetos = [
 {id: 1, name: "Pokedex", url: "https://alanlk22.github.io/pokedex/site.html"},
 {id: 2, name: "Pokedex mobile", url: "https://github.com/AlanLK22/pokedex-mobile"},
-{id: 3, name: "Pedra papel tesoura", url: "https://alanlk22.github.io/pedra-papel-tesoura/pedra%20papel%20tesoura.html"},
-{id: 4, name: "projetos futuros", url: "./assets/html/projetosFuturos.html"}
+{id: 3, name: "Cotação de moedas", url: "https://alanlk22.github.io/cotacao-de-moedas/"},
+{id: 4, name: "Pedra papel tesoura", url: "https://alanlk22.github.io/pedra-papel-tesoura/pedra%20papel%20tesoura.html"},
+{id: 5, name: "projetos futuros", url: "./assets/html/projetosFuturos.html"}
 ]
 
 const redesSociais = [
