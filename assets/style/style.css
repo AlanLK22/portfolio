@@ -32,6 +32,7 @@ position: absolute;
     padding: 2em;
     width: 15%;
     border-radius: 2em;
+    box-shadow: 15px 15px 10px 5px rgba(0,0,0,0.3);
 }
 
 .sobre-mim h3 {
@@ -62,6 +63,7 @@ position: absolute;
     font-size: 1.3em;
     position: relative;
     transition: 0.4s ease-in;
+    box-shadow: 15px 15px 10px 5px rgba(0,0,0,0.3);
    
 }
 
@@ -96,25 +98,33 @@ h2 {
 
 
 
-.redes-sociais a{
-    color: rgb(0, 0, 0);
+.facebook {
+    color: rgb(255, 255, 255);
     font-size: 35px;
     position: relative;
     bottom: 15.7em;
     left: 75%;
     text-decoration: none;
-    background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 5px;
+    background-color: #3b5998;
+    border: none;
+    outline: none;
     transition: 0.3s ease-in;
+    padding: 4px;
+    box-shadow: 15px 15px 10px 5px rgba(0,0,0,0.3);
     
 }
 
-.redes-sociais a:hover{
-    background-color: black;
-    border-color: white;
-    color: white;
-    
+
+.github{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    position: relative;
+    bottom: 16em;
+    left: 75%;
+    text-decoration: none;
+    background-color: #000000;
+    padding: 5px;
+    box-shadow: 12px 5px 10px 5px rgba(0,0,0,0.3);
 }
 
 .minhas-redes-sociais{
@@ -149,6 +159,7 @@ top: 2.5em;
     font-size: 10.5px;
     position: relative;
     top: 5em;
+    box-shadow: 15px 15px 10px 5px rgba(0,0,0,0.3);
     
 }
 
@@ -173,6 +184,7 @@ h2{
     text-align: center;
     font-size: 1.3em;
     position: relative;
+    box-shadow: 15px 15px 10px 5px rgba(0,0,0,0.3);
 
 }
 
@@ -183,15 +195,21 @@ h2{
     margin-top: 5em;
 }
 
-.redes-sociais a{
-position:  relative;
-font-size: 17px;
-left: 70%;
-bottom: 35em;
-
+.facebook {
+    position:  relative;
+    font-size: 17px;
+    left: 70%;
+    bottom: 35em;
 }
 
 
+.github {
+    position:  relative;
+    font-size: 17px;
+    left: 70%;
+    bottom: 35.2em;
+
+}
 
 
 }

@@ -13,9 +13,11 @@ const redesSociais = [
 
 const linksRedesSociais = redesSociais.map(({ id, name, url }) =>{
 
+let className = name === "facebook" ? "facebook" : "github";
+
 const elementos = `<div key=${id}   class="redes-sociais">
 
-     <a href=${url} target= _blank>${name}</a>
+     <a href=${url} target= _blank class=${className}>${name}</a>
 </div>`
 
 return elementos
