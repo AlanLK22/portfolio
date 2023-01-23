@@ -16,10 +16,10 @@ const linksRedesSociais = redesSociais.map(({ id, name, url }) =>{
 
 let className = name === "facebook" ? "facebook" : "github";
 
-const elementos = `<div key=${id}   class="redes-sociais">
+const elementos = `<ul key=${id}   class="redes-sociais">
 
      <a href=${url} target= _blank class=${className}>${name}</a>
-</div>`
+</ul>`
 
 return elementos
 
@@ -35,5 +35,5 @@ const elementos = `<div key=${id}  class="projetos">
 return elementos
 })
 
-const links = document.querySelector('.links').innerHTML = linksDosProjetos
-const linksDasRedesSociais = document.querySelector('.links-redes-sociais').innerHTML = linksRedesSociais
+const links = document.querySelector('.links').innerHTML = linksDosProjetos.join('');
+const linksDasRedesSociais = document.querySelector('.links-redes-sociais').innerHTML = linksRedesSociais.join('');
