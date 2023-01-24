@@ -214,7 +214,6 @@ html{
     background-color: #3b5998;
     border: none;
     outline: none;
-    transition: 0.3s ease-in;
     padding: 4px;
     box-shadow: 15px 15px 10px 5px rgba(0,0,0,0.3);
 }
@@ -222,13 +221,12 @@ html{
 
 .github {
     position:  relative;
-    font-size: 17px;
     color: rgb(255, 255, 255);
     font-size: 35px;
     text-decoration: none;
     background-color: #000000;
     padding: 5px;
-        box-shadow: 15px 15px 10px 5px rgba(0,0,0,0.3);
+    box-shadow: 15px 15px 10px 5px rgba(0,0,0,0.3);
 
 }
 
@@ -241,46 +239,95 @@ html{
 
 @media screen and (min-width: 300px) and (max-width: 768px){
     
+html{
+    overflow-x: hidden;
+}
+
+    .cabeçalho{
+     width: 100vw;
+     height: 32vh;
+}
+
+
+.cabeçalho ul {
+    width: 90vw;
+    right: 3vw;    
+}
+
+.cabeçalho ul a {
+    font-size: 30px;
+}
+
+
+.conteudo h1 {
+    top: 25vh;
+    font-size: 30px;
+}
 
 
 
-.projetos a{
-    text-decoration: none;
-    display: inline-block;
-    background-color: white;
-    color: black;
-    font-family: sans-serif;
-    padding: 1em;
-    width: 60%;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 1.3em;
-    position: relative;
-    box-shadow: 15px 15px 10px 5px rgba(0,0,0,0.3);
+.bg-projetos h1{
+    font-size: 40px;
+    top: 220vh;
+}
 
+
+.conteudo .sobre-mim{
+    width: 80vw;
+    height: 35vh;
+    top: 95vh;
+    left: 10vw;
+}
+
+.conteudo .sobre-mim p {
+    font-size: 14px;
+}
+
+
+.conteudo .sobre-mim .img-code{
+    right: 50vw;
+    top: 30vh;
+    width: 80vw;
+    height: 35vh;
+     position: relative;
+     left: 1vw;
+    
+}
+
+.img-perfil{
+    width: 70px;
+    height: 70px;
 }
 
 .minhas-redes-sociais{
-    position: absolute;
-    left: 70%;
-    font-size: 15px;
-    margin-top: 5em;
-}
 
-.facebook {
-    position:  relative;
-    font-size: 17px;
-    left: 70%;
-    bottom: 41.5em;
+    top: 100vh;
+    text-align: center;
+    font-size: 40px;
 }
 
 
-.github {
-    position:  relative;
-    font-size: 17px;
-    left: 70%;
-    bottom: 41.7em;
 
+.links-redes-sociais{
+    width: 80vw;
+    top: 100vh;
+    
+}
+
+
+.github{
+    font-size: 25px;
+}
+
+.facebook{
+    font-size: 25px;
+    right: 6vw;
+}
+
+.projetos a{   
+    padding: 1em;
+    width: 60%;
+    font-size: 1.3em;
 }
 
 
