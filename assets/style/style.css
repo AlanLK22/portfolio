@@ -280,13 +280,13 @@ html{
 }
 
 .conteudo .sobre-mim p {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 
 .conteudo .sobre-mim .img-code{
     right: 50vw;
-    top: 30vh;
+    top: 40vh;
     width: 80vw;
     height: 35vh;
      position: relative;
