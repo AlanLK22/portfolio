@@ -299,25 +299,68 @@ html{
 
 
 .conteudo .sobre-mim{
-    width: 80vw;
-    height: 35vh;
-    top: 95vh;
-    left: 10vw;
+    position: absolute;
+    width: 280px;
+    height: 550px;
+    top: 50%;
+    left: 12%;
+  
 }
 
-.conteudo .sobre-mim p {
-    font-size: 18px;
+
+card{
+    position: absolute;
+    width: 280px;
+    height: 550px;
+    border-radius: 10px;
 }
 
 
-.conteudo .sobre-mim .img-code{
-    right: 50vw;
-    top: 40vh;
-    width: 80vw;
-    height: 35vh;
-     position: relative;
-     left: 1vw;
-    
+
+.card h1{
+
+    position: absolute;
+    font-size: 25px;
+    font-family: sans-serif;
+    left: 3%;
+}
+
+.card h2{
+    position: absolute;
+    font-size: 20px;
+    font-family: sans-serif;
+    top: 80%;
+    left: 30%;
+}
+
+.card img {
+    position: absolute;
+    width: 122%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.card p {
+    position: absolute;
+    top: 65%;
+    left: 3%;
+}
+
+.card .bio{
+    position: absolute;
+    font-size: 15px;
+    font-family: sans-serif;
+    top: 95%;
+    left: 22%;
+}
+
+.img-code{
+    position: absolute;
+    left: 30vw;
+    top: 170vh;
+    width: 50%;
+    height: 42vh;
+    border-radius: 10px
 }
 
 .img-perfil{
