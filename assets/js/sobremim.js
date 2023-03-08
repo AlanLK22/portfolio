@@ -4,8 +4,8 @@ const sobreMim = () => {
 
 return {
     nome: 'Alan sena',
-    idade: 25,
-    imagem: './assets/img/perfil.jpeg',
+    idade: 26,
+    imagem: './assets/img/perfil2.jpeg',
     bio: 'Sou um estudante autodidata de programação, atualmente estudando javascript e typescript, amo tecnologia e sua capacidade de mudar o mundo!'
 }
 

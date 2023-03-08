@@ -113,9 +113,10 @@ html{
 
 .card img {
     position: absolute;
-    width: 100%;
+    width: 50%;
+    left: 22.5%;
     height: 40%;
-    border-radius: 10px;
+    
 }
 
 .card p {
@@ -335,9 +336,12 @@ card{
 
 .card img {
     position: absolute;
-    width: 122%;
+    width: 65%;
     height: 50%;
-    border-radius: 10px;
+    left: 27%;
+    top: 3%;
+    border-radius: 5px;
+    
 }
 
 .card p {
@@ -355,12 +359,7 @@ card{
 }
 
 .img-code{
-    position: absolute;
-    left: 30vw;
-    top: 170vh;
-    width: 50%;
-    height: 42vh;
-    border-radius: 10px
+  display: none;
 }
 
 .img-perfil{
