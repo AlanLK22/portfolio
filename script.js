@@ -37,3 +37,15 @@ const projetos = [
     
     const links = document.querySelector('.projetos').innerHTML = linksDosProjetos.join('');
     const linksDasRedesSociais = document.querySelector('.links-redes-sociais').innerHTML = linksRedesSociais.join('');
+
+    
+    
+    const music = () => {
+        const audio = new Audio('music/secunda.mp3');
+        document.querySelector('body').addEventListener('click', () => {
+          audio.play();
+        });
+        
+    }
+    
+music();
