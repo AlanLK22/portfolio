@@ -4,7 +4,7 @@ const projetos = [
     {id: 3, name: "Cotação de moedas", url: "https://alanlk22.github.io/cotacao-de-moedas/"},
     {id: 4, name: "AnimeLand (buscar animes)", url: "https://alanlk22.github.io/AnimeLand/"},
     {id: 5, name: "Pedra papel tesoura", url: "https://alanlk22.github.io/pedra-papel-tesoura/pedra%20papel%20tesoura.html"},
-    {id: 6, name: "projetos futuros", url: "./assets/html/projetosFuturos.html"}
+    {id: 6, name: "Clínica Psicologia", url: "https://alanlk22.github.io/Clinica-Psicologia/"}
     ]
     
     const redesSociais = [
