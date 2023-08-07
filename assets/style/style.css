@@ -1,137 +1,214 @@
-html{
-    width: 100vw;
-    height: 100vh;
-}
-
-body{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     width: 100vw;
     height: 100vh;
 }
 
-
-:root{
-    --padding: 30px;
-    --margin: 15px;
-}
-
-.container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.2fr;
-    gap: 5px;
-    width: 100%;
-    height: 100%;
-    grid-template-areas: 
-    "main main section"
-    "main main section"
-    "footer footer footer"
-    ;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
-    color: white;
-}
-
-
-.main{
-    grid-area: main;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0,0,0,0.4)),  url(../img/code\ 2.webp);
-    border-radius: 8px;
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(../img/gif\ wave.gif);
     background-position: center;
-    background-size: contain; 
     background-repeat: no-repeat;
-    display: grid;
-}
-
-
-
-.sobre-mim{
-    padding: var(--padding);
-    color: rgb(255, 255, 255);
-
-}
-
-.sobre-mim p{
-    font-size: 22px;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-}
-
-
-
-
-.tecnologias{
+    background-size: cover;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 5px;
+    grid-template-rows: 0.1fr;
+    grid-template-areas:
+        "header header header"
+        "section main main";
+
+}
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 0.3fr 1fr;
+    grid-template-rows: 1fr auto auto;
+    justify-content: center;
+    align-items: flex-start;
 
 
 }
 
-.tecnologias p{
-    display: -ms-inline-grid;
-    font-weight: bold;
-    background-color: #cde4ad;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 10px;
-    color: #664c48;
+
+.tecnologias {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Neon 80s';
+    grid-row: 2;
+    animation: neon-blink 1s linear infinite alternate;
+}
+
+.tecnologias p {
     font-size: 20px;
+}
+
+
+.contato-info {
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr 0.8fr;
+}
+
+.contato-info p {
+    color: white;
+    animation: neon-blink 1s linear infinite alternate;
+    font-family: 'Neon 80s';
+    justify-self: center;
     align-self: center;
-     box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
-   
+
 }
 
-.section{
+
+
+
+.meu-nome {
+    grid-column: 2;
+    color: white;
+    font-family: 'Neon 80s';
+    font-size: 3rem;
+    animation: neon-blink 1s linear infinite alternate;
+}
+
+.titulo {
+    grid-column: 2;
+    justify-self: end;
+    color: white;
+    font-family: 'Neon 80s';
+    font-size: 3rem;
+    animation: neon-blink 1s linear infinite alternate;
+}
+
+
+@keyframes neon-blink {
+    from {
+        text-shadow: 0 0 10px rgb(235, 14, 143), 0 0 10px rgb(235, 14, 143), 0 0 10px rgb(235, 14, 143), 0 0 10px rgb(235, 14, 143), 0 0 10px rgb(235, 14, 143), 0 0 10px rgb(235, 14, 143);
+    }
+
+    to {
+        text-shadow: 0 0 15px rgb(235, 14, 143), 0 0 15px rgb(235, 14, 143), 0 0 15px rgb(235, 14, 143), 0 0 15px rgb(235, 14, 143);
+    }
+}
+
+
+.section {
     grid-area: section;
-    background-color: #75bde0;
-    border-radius: 8px;
-   
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.5fr 0.8fr 0.8fr;
+    padding: 1rem;
 }
 
-.footer{
-    grid-area: footer;
-    background-color: #97dbae;
-    border-radius: 8px;
+.section h1 {
+    color: white;
+    font-family: 'Neon 80s';
+    align-self: center;
+    font-size: 2rem;
 }
 
-.footer h2 {
-    font-size: 20px;
-    font-weight: bold;
+.section p {
+    color: white;
+    font-family: 'Neon 80s';
+    grid-row: 2;
+    font-size: 1.3rem;
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.projetos {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-self: center;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.projetos p {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    color: white;
+    font-family: 'Neon 80s';
+    text-decoration: none;
+}
+
+.projetos:nth-child(1) {
+    background-image: url("../img/projetos/pokedex-web.jpeg");
+}
+
+.projetos:nth-child(2) {
+    background-image: url("../img/projetos/pokedex-mobile.jpeg");
+}
+
+.projetos:nth-child(3) {
+    background-image: url("../img/projetos/cotação-moeda.jpeg");
+}
+
+.projetos:nth-child(4) {
+    background-image: url("../img/projetos/animeland.jpeg");
+}
+
+.projetos:nth-child(5) {
+    background-image: url("../img/projetos/pedra-papel-tesoura.jpeg");
+}
+
+.projetos:nth-child(6) {
+    background-image: url("../img/projetos/clinica-psicologia.jpeg");
+}
+
+
+.section h2 {
+    align-self: center;
+    justify-self: center;
+    color: white;
+    font-family: 'Neon 80s';
+    animation: neon-blink 1s linear infinite alternate;
+
 }
 
 .links-redes-sociais {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    grid-row: 4;
 }
 
-
-
-.projetos a{
+.github {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
     text-decoration: none;
-    display: inline-block;
-    background-color: white;
-    color: black;
+    background-color: #000000;
     padding: 5px;
-    width: 80%;
-    margin-bottom: 15px;
-    border: 2px solid black;
-    border-radius: 10px;
-    list-style-type: none;
-    font-size: 25px;
-    transition: 0.4s ease-in;
-    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
-   
-}
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 
-.projetos a:hover {
-    transform: scale(1.03);
-    background-color: rgb(0, 0, 0);
-    color: white;
-    border-color: white;
-    
 }
 
 .facebook {
@@ -143,44 +220,104 @@ body{
     border-radius: 5px;
     outline: none;
     padding: 4px;
-     box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
-   
-}
-
-
-.github {
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    text-decoration: none;
-    background-color: #000000;
-    padding: 5px;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
-   
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 
 }
 
-@media only screen and (max-width: 800px) {
-    .container{
+
+
+@media (max-width: 768px) {
+    .container {
         grid-template-columns: 1fr;
-        grid-template-areas: 
-        "main"
-        "section"
-        "footer";
         grid-template-rows: 1fr 1fr 1fr;
-        
-        
+        grid-template-areas: 
+            "header"
+            "section"
+            "main";
     }
- 
+  
+    .header {
+      grid-template-columns: 1fr;
+      gap: 15px;
+      justify-items: center;
+    }
+  
+    .tecnologias {
+      grid-row: 5;
+      grid-column: 1;
+    }
+
     .tecnologias p {
-        font-size: 12px;
-        
+        font-size: 13px;
+        grid-row: 5;
+    }
+  
+    .contato-info {
+      grid-row: 4;
+      font-size: 12px;
+
+    }
+  
+    .meu-nome {
+      grid-row: 2;
+      grid-column: 1;
+      justify-self: center;
+      font-size: 2rem;
+    }
+  
+    .titulo {
+      grid-row: 3;
+      grid-column: 1;
+      justify-self: center;
+      font-size: 2rem;
+    }
+  
+    .section {
+      grid-row: 2;
+      grid-column: 1;
+    }
+  
+    .section h1,
+    .section h2,
+    .section p {
+      text-align: center;
+      font-size: 15px;
     }
 
-    .sobre-mim p {
+    .links-redes-sociais {
+      grid-row: 4;
+      grid-column: 1;
+    }
+
+    .section h2{
+        grid-row: 3;
+    }
+
+    .github,
+    .facebook {
         font-size: 15px;
+        padding: 3px;
+    }
+  
+    .main {
+      grid-row: 4;
+      grid-column: 1;
+    }
+  
+
+    .projetos {
+        
+        width: 90px; 
+        height: 90px; 
+        margin: 20px;
+        top: -50px;
+
+       
     }
 
-
-}
-
+    .projetos p {
+        top: -30px; 
+        font-size: 12px; 
+    }
+  }
+  
